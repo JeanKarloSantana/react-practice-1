@@ -17,10 +17,10 @@ function App() {
     setExpenses(prevExpenses => {
       return [expense, ...prevExpenses];
     }); 
-  };  
+  };
 
   return (
-    <div>      
+    <div>
       <NewExpense onAddExpense={addExpenseHandler} />
       <Expenses items={expenses}/>
     </div>
